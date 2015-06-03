@@ -7,6 +7,7 @@ all_from('lib/MooseX/WithCache.pm');
 requires('Moose', '0.59');
 requires('MooseX::Role::Parameterized');
 requires('Cache::Memcached');
+requires('Cache::FileCache');
 requires('Data::Dumper');
 requires('Digest::MD5');
 
@@ -22,6 +23,5 @@ if (! $@ && defined $MooseX::WithCache::VERSION && $MooseX::WithCache::VERSION <
     }
 }
 
-author_tests 'xt';
 tests( 't/*.t t/*/*.t' );
 WriteAll;

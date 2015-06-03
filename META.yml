@@ -23,6 +23,7 @@ no_index:
     - xt
 requires:
   Cache::Memcached: 0
+  Cache::FileCache: 0
   Data::Dumper: 0
   Digest::MD5: 0
   Moose: 0.59
@@ -30,4 +31,4 @@ requires:
   perl: 5.8.0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01006
+version: 0.01007

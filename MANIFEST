@@ -11,6 +11,7 @@ inc/Module/Install/WriteAll.pm
 lib/MooseX/WithCache.pm
 lib/MooseX/WithCache/Backend.pm
 lib/MooseX/WithCache/Backend/Cache/FastMmap.pm
+lib/MooseX/WithCache/Backend/Cache/FileCache.pm
 lib/MooseX/WithCache/Backend/Cache/Memcached.pm
 lib/MooseX/WithCache/Backend/CHI.pm
 lib/MooseX/WithCache/KeyGenerator.pm
@@ -22,9 +23,6 @@ t/00_compile.t
 t/02_memcached.t
 t/03_chi.t
 t/04_fastmmap.t
-t/deprecated/00_compile.t
-t/deprecated/02_memcached.t
-t/deprecated/03_chi.t
-t/deprecated/04_fastmmap.t
-xt/pod-coverage.t
-xt/pod.t
+t/05_filecache.t
+t/99_pod-coverage.t
+t/99_pod.t
